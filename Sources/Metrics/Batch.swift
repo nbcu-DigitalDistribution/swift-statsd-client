@@ -14,8 +14,8 @@ public struct Batch: Metric {
 
     init(metrics: Metric...) {
         metricData = ""
-        for (i, m) in metrics.enumerated() {
-            metricData += i == metrics.count - 1 ? "\(m.metricData)" : "\(m.metricData)\n"
+        for (index, metric) in metrics.enumerated() {
+            metricData += index == metrics.count - 1 ? "\(metric.metricData)" : "\(metric.metricData)\n"
         }
     }
 }
