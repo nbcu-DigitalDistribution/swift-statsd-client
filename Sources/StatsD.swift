@@ -23,7 +23,7 @@ public class StatsD: NSObject, StatsdProtocol {
 
     let transport: Transport
 
-    init(transport: Transport) {
+    public init(transport: Transport) {
         self.transport = transport
     }
 
